@@ -1,3 +1,6 @@
+# Outputs 2 files:
+# root_certificate_authority.crt with the root CA certificate
+# root_certificate_authority.key with the root CA certificate's private key
 openssl req -x509 \
             -sha256 -days 356 \
             -nodes \
