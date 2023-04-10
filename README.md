@@ -5,7 +5,11 @@ This repository contains my attempt to set up an NGINX reverse proxy with SSL en
 ## Checklist
 - [X] Deploy server and access application via HTTP
 - [X] Generate a self-signed certificate
-- [ ] Access application via https://localhost
+- [X] Access application via https://localhost
+
+It worked!
+
+![](docs/success.jpg)
 
 ## Resources
 
@@ -22,6 +26,8 @@ This repository contains my attempt to set up an NGINX reverse proxy with SSL en
 [devopscube - How to Create Self-Signed Certificates using OpenSSL](https://devopscube.com/create-self-signed-certificates-openssl/)
 
 ## Notes
+
+- 502 error on NGINX might mean that I'm trying to use HTTPS to host an application listening for HTTP
 
 ### Order of scripts for generating a self signed certificate:
 1. `create_certificate_authority.sh`
