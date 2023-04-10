@@ -3,8 +3,10 @@ services:
     image: nginxproxy/nginx-proxy
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./certs:/etc/nginx/certs
 
   whoami:
     image: traefik/whoami
@@ -13,3 +15,4 @@ services:
     environment:
       - VIRTUAL_HOST=localhost
       - VIRTUAL_PORT=80
+      - VIRTUAL_PROTO=https
