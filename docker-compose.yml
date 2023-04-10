@@ -1,5 +1,3 @@
-version: '2'
-
 services:
   nginx-proxy:
     image: nginxproxy/nginx-proxy
@@ -9,9 +7,9 @@ services:
       - /var/run/docker.sock:/tmp/docker.sock:ro
 
   whoami:
-    image: jwilder/whoami
+    image: traefik/whoami
     expose:
-      - "8000"
+      - "80"
     environment:
       - VIRTUAL_HOST=localhost
-      - VIRTUAL_PORT=8000
+      - VIRTUAL_PORT=80
