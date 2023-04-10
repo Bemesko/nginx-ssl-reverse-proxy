@@ -40,3 +40,10 @@ This repository contains my attempt to set up an NGINX reverse proxy with SSL en
   - For static DNS, it is the IP address or hostname of a system that will use a certificate
 - OpenSSL
   - Open source toolkit for SSL stuff such as generating certificates, validating them and converting them to various formats
+- X509
+- RSA
+- PEM
+- PKCS#12 / P12
+- .CRS
+- .CRT
+- .KEY
